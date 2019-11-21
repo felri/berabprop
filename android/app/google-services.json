@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "132484089654",
+    "firebase_url": "https://bearable-app.firebaseio.com",
+    "project_id": "bearable-app",
+    "storage_bucket": "bearable-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132484089654:android:15b92f026f79c828829597",
+        "android_client_info": {
+          "package_name": "com.bearable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132484089654-qtdihpba9qgsgi0oupi1n5et9of48o53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQza3WJyKZcD1FskjZC-7QtvHck_j9rRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132484089654-qtdihpba9qgsgi0oupi1n5et9of48o53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

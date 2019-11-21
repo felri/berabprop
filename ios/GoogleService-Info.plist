@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>268760770384-ck3ei06pd79i3c5d26eukcuc0r7df6pk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.268760770384-ck3ei06pd79i3c5d26eukcuc0r7df6pk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAem4mvtDR85DWSV-EItorxt1cUlR0yWro</string>
+	<key>GCM_SENDER_ID</key>
+	<string>268760770384</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.codeleap.ProjectTemplate</string>
+	<key>PROJECT_ID</key>
+	<string>codeleap-project-template</string>
+	<key>STORAGE_BUCKET</key>
+	<string>codeleap-project-template.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:268760770384:ios:c6645db4a5f9ef03</string>
+	<key>DATABASE_URL</key>
+	<string>https://codeleap-project-template.firebaseio.com</string>
+</dict>
+</plist>

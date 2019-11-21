@@ -1,0 +1,67 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+
+buildscript {
+    ext {
+        googlePlayServicesVersion = "17.0.0" // default: "16.1.0" - pre-AndroidX, override for AndroidX
+        buildToolsVersion = "28.0.3"
+        minSdkVersion = 19
+        compileSdkVersion = 28
+        targetSdkVersion = 28
+        supportLibVersion = "28.0.0"
+    }
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.google.gms:google-services:4.2.0'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootDir/../node_modules/react-native/android" // This was RN original str before rn navigation
+        }
+        maven {
+          url 'https://maven.google.com'
+        }
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = '4.7'
+    distributionUrl = distributionUrl.replace("bin", "all")
+}
+
+subprojects { subproject ->
+    afterEvaluate {
+        if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion compileSdkVersion
+                buildToolsVersion "$buildToolsVersion"
+
+                variantFilter { variant ->
+                    def names = variant.flavors*.name
+                    if (names.contains("reactNative51") || names.contains("reactNative55") || names.contains("reactNative56") || names.contains("reactNative57") || names.contains("reactNative57_5")) {
+                        setIgnore(true)
+                    }
+                }
+            }
+        }
+    }
+}
