@@ -24,7 +24,7 @@
     "path": "^0.12.7",
     "react": "16.8.6",
     "react-mixin": "^5.0.0",
-    "react-native": "^0.60.5",
+    "react-native": "^0.62.3",
     "react-native-app-settings": "^2.0.1",
     "react-native-background-fetch": "^2.0.8",
     "react-native-background-timer": "^2.1.1",
